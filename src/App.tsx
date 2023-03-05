@@ -26,15 +26,13 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="grid place-items-center relative h-full w-full">
-        <div className={"sticky top-0"}>
+        <div className={"absolute top-0 text-blue-200 shadow-md"}>
           <h1>Assignment</h1>
         </div>
         <div
           className="overflow-y-auto"
           style={{
-            maxHeight: ref?.current?.clientHeight
-              ? `calc(100vh - ${ref?.current?.clientHeight})`
-              : "100vh",
+            marginTop: ref?.current?.clientHeight,
           }}
         >
           <Products />
