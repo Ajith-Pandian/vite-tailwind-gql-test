@@ -27,7 +27,7 @@ function App() {
     <ApolloProvider client={client}>
       <div className="grid place-items-center relative h-full w-full">
         <div className={"absolute top-0 text-blue-200 shadow-md"}>
-          <h1>Assignment</h1>
+          <h1>Saleor Products</h1>
         </div>
         <div
           className="overflow-y-auto"
